@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Jokenpô</title>
+</head>
+<body>
+    
+    <main class="container">
+        <img class="img-logo" src="/assets/img/JOKENPÔ LOGO.png" alt="Jokenpô Logo" width="500px">
+
+        <div class="button">
+            <button id="pedra"><img src="/assets/img/pedra.png" alt="Pedra" onclick="playHuman('pedra')" width="100px"></button>
+            <button id="papel"><img src="/assets/img/papel.png" alt="Papel" onclick="playHuman('papel')" width="100px"></button>
+            <button id="tesoura"><img src="/assets/img/tesoura.png" alt="Tesoura" onclick="playHuman('tesoura')" width="100px"></button>
+        </div>
+
+        <div class="container-result">
+            <p class="result">Resultado da rodada:</p>
+            <div id="loading" class="loading hidden"></div> <!-- Animação loading -->
+        </div>
+        
+        <div class="text">
+            <p class="me">Sua pontuação é: <span id="me">0</span></p>
+            <p class="adversary">A pontuação do adversário é: <span id="adversary">0</span></p>
+        </div>
+    </main>
+
+    <img class="background" src="/assets/img/background.jpeg" alt="background">
+    <div class="background-black"></div>
+
+
+
+</body>
+
+<script src="/script.js"></script>
+
+</html>
